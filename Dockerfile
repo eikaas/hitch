@@ -11,7 +11,6 @@ RUN ./bootstrap
 RUN ./configure --prefix=/usr/local/hitch
 RUN make 
 RUN make install
-RUN rm -rf /build 
 
 WORKDIR /usr/local/hitch
 ADD etc /usr/local/hitch/etc
